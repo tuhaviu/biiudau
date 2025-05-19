@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chúc mừng sinh nhật Bi Béo 💖</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+    body {
+      font-family: 'Pacifico', cursive;
+      background: linear-gradient(135deg, #ffe6f0, #e6f7ff);
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      color: #d63384;
+    }
+
+    h1 {
+      font-size: 48px;
+      margin-top: 40px;
+      animation: bounce 1.5s infinite;
+    }
+
+    p {
+      font-size: 24px;
+      margin: 20px auto;
+      max-width: 700px;
+      transition: opacity 0.5s ease;
+    }
+
+    .photos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 40px 10px;
+      gap: 20px;
+    }
+
+    .photo {
+      width: 250px;
+      border-radius: 20px;
+      box-shadow: 0 0 15px rgba(255, 192, 203, 0.6);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      animation: float 3s ease-in-out infinite;
+    }
+
+    .photo:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px rgba(255, 105, 180, 0.8);
+    }
+
+    button {
+      padding: 15px 30px;
+      font-size: 22px;
+      border-radius: 12px;
+      border: none;
+      background-color: #ff69b4;
+      color: white;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+
+    #gift-box {
+      display: none;
+      margin-top: 40px;
+      font-size: 100px;
+      animation: pop 0.5s ease;
+    }
+
+    @keyframes bounce {
+      0%   { transform: translateY(0); }
+      50%  { transform: translateY(-10px); }
+      100% { transform: translateY(0); }
+    }
+
+    @keyframes float {
+      0%   { transform: translateY(0px); }
+      50%  { transform: translateY(-5px); }
+      100% { transform: translateY(0px); }
+    }
+
+    @keyframes pop {
+      from { transform: scale(0); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+
+    audio {
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+  <h1>🎂 Chúc mừng sinh nhật Bi Béo 🎉</h1>
+  <p id="blessing-text">
+    chúc bi thúi tuổi mới thành công rực rỡ, chạy xe cẩn thận dà iu em nhìu hơnn 💖🎉
+  </p>
+
+  <button onclick="showGift()">🎁 Bấm vào đây</button>
+
+  <div id="gift-box">
+    🎁🎁🎁
+  </div>
+
+  <div class="photos">
+    <img src="DEA83788-9875-4839-AECD-0BDEB5539E8E.jpeg" class="photo">
+    <img src="8FCAE40D-C04F-4F13-803E-105383201389.jpeg" class="photo">
+    <img src="0EE98826-15C4-42FC-BB0F-7053DF81A99C.jpeg" class="photo">
+    <img src="B20B78D9-E32D-4B99-B137-D12C9F9614AB.jpeg" class="photo">
+  </div>
+
+  <audio controls autoplay loop>
+    <source src="iLoveYt.net_YouTube_Guns-N-Roses-Sweet-Child-O-Mine-Official_Media_1w7OgIMMRc4_002_720p.mp4" type="audio/mp4">
+    Trình duyệt của bạn không hỗ trợ phát nhạc.
+  </audio>
+
+  <script>
+    function showGift() {
+      const giftBox = document.getElementById("gift-box");
+      giftBox.style.display = "block";
+    }
+  </script>
+</body>
+</html>
